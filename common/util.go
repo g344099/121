@@ -337,6 +337,7 @@ func Filter(name string, err error) string {
 	name = strings.ReplaceAll(name, "*", "_")
 	name = strings.ReplaceAll(name, "【", "[")
 	name = strings.ReplaceAll(name, "】", "]")
+	name = strings.ReplaceAll(name, ":", "：")
 	name = strings.TrimSpace(name)
 
 	return name
